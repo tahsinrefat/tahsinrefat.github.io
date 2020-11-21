@@ -538,26 +538,27 @@
 							
 							<div class="tab-pane fade active in" id="reviews" >
 								<div class="col-sm-12">
-									<ul>
+									<ul id="comment-list">
 										<li><a href=""><i class="fa fa-user"></i>EUGEN</a></li>
-										<li><a href=""><i class="fa fa-clock-o"></i>12:41 PM</a></li>
-										<li><a href=""><i class="fa fa-calendar-o"></i>31 DEC 2014</a></li>
+										<!--<li><a href=""><i class="fa fa-clock-o"></i>12:41 PM</a></li>
+										<li><a href=""><i class="fa fa-calendar-o"></i>31 DEC 2014</a></li>-->
+										<li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p></li>
 									</ul>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 									<p><b>Write Your Review</b></p>
 									
-									<form action="#">
+									<form action="#" id="comment-form">
 										<span>
-											<input type="text" placeholder="Your Name"/>
-											<input type="email" placeholder="Email Address"/>
+											<input type="text" id="comment-name" placeholder="Your Name"/>
+											<input type="email" id="comment-email" placeholder="Email Address"/>
 										</span>
-										<textarea name="" ></textarea>
+										<textarea name="" id="comment-message"></textarea>
 										<b>Rating: </b> <img src="images/product-details/rating.png" alt="" />
-										<button type="button" class="btn btn-default pull-right">
+										<button type="button" onclick="func_comment(); return false" class="btn btn-default pull-right">
 											Submit
 										</button>
 									</form>
 								</div>
+							</div>
 							</div>
 							
 						</div>
@@ -836,6 +837,11 @@
 	<script src="js/jquery.scrollUp.min.js"></script>
 	<script src="js/price-range.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/main.js"></script>
+	<script src="js/main.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
+	<script src="./js/comment_for_slider_item_2.js"></script>
 </body>
 </html>
