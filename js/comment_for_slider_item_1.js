@@ -46,6 +46,8 @@ function doComment(name, email, msg)
     l1.appendChild(linkt);
     document.querySelector('#comment-list').appendChild(l1);
     document.querySelector('#comment-list').appendChild(xx);
+    var l2 = document.createElement("BR");
+    document.querySelector('#comment-list').appendChild(l2);
 }
  
 function pushToDb(name, email, comment)
